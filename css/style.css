@@ -1,0 +1,94 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+     font-size: 62.5%;
+
+}
+
+
+h1{
+     text-align: center;
+     margin:  auto;
+     font-size: 10rem;
+}
+
+h2{
+     text-align: center;
+     font-size: 1.5rem;
+}
+
+header{
+     border: 10px outset #363b81;
+     margin: 2vh 20vw
+}
+
+main{
+     border: 9px outset #FF1F1F;
+     /* padding: 0 10vw; */
+     margin: 0 10vw;
+}
+
+
+/* from website instructions */
+
+ul {
+     /* border: 2px solid green; */
+     display: flex;
+     flex-wrap: wrap;
+     padding: 1vh 1vw
+}
+
+li {
+     border: 5px outset #5db9ff;
+     width: 10vh;
+     flex-grow: 1;
+     margin: 0.5%;
+     list-style: none;
+     
+}
+
+img{
+     /* max-height: 100%; */
+     max-width: 10vh;
+     min-width: 100%;
+     object-fit: contain;
+     /* try fill, cover, or contain */
+     vertical-align: bottom;
+     /* margin: auto; */
+     
+}
+
+#logo {
+     max-height: 20rem;
+     
+}
+
+footer * {
+     text-align: center;
+     font-size: 1.5rem;
+}
+
+/* li:last-child {
+     flex-grow: 10;
+} */
